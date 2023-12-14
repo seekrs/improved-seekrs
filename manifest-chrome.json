@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Improved Seekrs",
+  "description": "What if it was Purple ?",
+  "version": "0.3",
+  "icons": {
+        "48": "img/logo.png"
+    },
+  "content_scripts": [{
+	"js": ["styling.js"],
+    "matches": ["https://profile.intra.42.fr/*"]
+  }]
+}
