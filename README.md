@@ -24,6 +24,12 @@ In Chrome extensions :
 
 - and some other cool things :D
 
+## Credits / License
+
+> *forked from [adjoly](https://profile.intra.42.fr/users/adjoly) ([github](https://github.com/KeyZox71))*
+
+This project is published into the public domain.
+
 ## Screenshots
 
 ![screenshot](https://cdn.discordapp.com/attachments/784779058407014403/1184937047752970361/image.png)

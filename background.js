@@ -1,5 +1,5 @@
 let seekersPatern = "https://cdn.intra.42.fr/coalition/cover/219/login-screen.jpg";
-const seekerstargetUrl = "https://cdn.discordapp.com/attachments/1184587339310313552/1184587422214918224/seekers-login.png";
+const seekerstargetUrl = "https://raw.githubusercontent.com/seekrs/art/main/wallpapers/seekrs-login.png";
 
 
 let mmoussouPattern = "https://cdn.intra.42.fr/users/*/*mmoussou*";
@@ -34,6 +34,8 @@ function lbouetRedirect(requestDetails) {
     redirectUrl: lbouetTargetUrl,
   };
 }
+
+// ---------------------------------------------------
 
 browser.webRequest.onBeforeRequest.addListener(
   seekersRedirect,

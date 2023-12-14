@@ -14,9 +14,7 @@ var all = document.getElementsByTagName("*");
 
 function seekersUpdate()
 {
-    //var coalName = document.getElementsByClassName('coalition-span');
     var all = document.getElementsByTagName("*");
-
     for (var i=0, max=all.length; i < max; i++) {
         if (all[i].style)
         {
@@ -35,7 +33,5 @@ function seekersUpdate()
         }
     }
 }
-
-seekersUpdate();
 
 seekersUpdate();
