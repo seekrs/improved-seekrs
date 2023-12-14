@@ -1,0 +1,13 @@
+{
+  "addons": {
+    "{9b09b947-f73c-4f2c-9c1f-2294c8c0d446}": {
+      "updates": [
+		{
+          "version": "0.3",
+		  "update_link": "https://github.com/y-syo/improved-seekrs/releases/download/0.3/firefox.xpi",
+		  "update_info_url": "https://github.com/y-syo/improved-seekrs/releases/tag/0.3"
+        }
+      ]
+    }
+  }
+}

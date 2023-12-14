@@ -1,5 +1,5 @@
 let seekersPatern = "https://cdn.intra.42.fr/coalition/cover/219/login-screen.jpg";
-const seekerstargetUrl = "https://cdn.discordapp.com/attachments/947139790183211018/1184336924031340594/seekers-login.png";
+const seekerstargetUrl = "https://cdn.discordapp.com/attachments/1184587339310313552/1184587422214918224/seekers-login.png";
 
 
 let mmoussouPattern = "https://cdn.intra.42.fr/users/*/*mmoussou*";
