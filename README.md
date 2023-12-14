@@ -10,7 +10,13 @@
 
 ## Installation
 
-[<img src="https://www.mozilla.org/media/img/structured-data/logo-firefox-browser.fbc7ffbb50fd.png" width="128" alt="Mozilla Firefox" title="Download for Mozilla Firefox">](https://github.com/y-syo/improved-seekrs/releases/latest/download/firefox.xpi)
+[<img src="https://www.mozilla.org/media/img/structured-data/logo-firefox-browser.fbc7ffbb50fd.png" width="128" alt="Mozilla Firefox" title="Download for Mozilla Firefox">](https://addons.mozilla.org/firefox/downloads/file/4209190/24ba09f75ce9483c84c3-0.3.xpi)
+
+In Chrome extensions :
+
+- Activate Developper mode
+- Load Unpacked
+- Select the folder with the extension in it
 
 ## Features
 
