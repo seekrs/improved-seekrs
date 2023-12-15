@@ -8,6 +8,9 @@ const mmoussoutargetUrl = "https://i.redd.it/a2nga4jvjy291.png";
 let lbouetPattern = "https://cdn.intra.42.fr/users/*/*lbouet*";
 const lbouetTargetUrl = "https://media1.tenor.com/m/n49_tZAbdocAAAAC/lain-iwakura-sel.gif";
 
+let kiroussaPattern = "https://cdn.intra.42.fr/users/*/*kiroussa*";
+const kroussarTargetUrl = "https://cdn.intra.42.fr/users/5b1f24ed85722759e9a759c3022ad02b/kroussar.jpg";
+
 function seekersRedirect(requestDetails) {
   if (requestDetails.url === seekerstargetUrl) {
     return;
@@ -35,6 +38,15 @@ function lbouetRedirect(requestDetails) {
   };
 }
 
+function kroussarRedirect(requestDetails) {
+  if (requestDetails.url === kroussarTargetUrl) {
+    return;
+  }
+  return {
+    redirectUrl: kroussarTargetUrl,
+  };
+}
+
 // ---------------------------------------------------
 
 browser.webRequest.onBeforeRequest.addListener(
@@ -52,5 +64,11 @@ browser.webRequest.onBeforeRequest.addListener(
 browser.webRequest.onBeforeRequest.addListener(
   lbouetRedirect,
   { urls: [lbouetPattern], types: ["image"] },
+  ["blocking"],
+);
+
+browser.webRequest.onBeforeRequest.addListener(
+  kroussarRedirect,
+  { urls: [kiroussaPattern], types: ["image"] },
   ["blocking"],
 );
