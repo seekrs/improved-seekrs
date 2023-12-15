@@ -45,6 +45,18 @@ function addTag(user, tag, color)
 }
 
 addTag("kiroussa", "kroussar", "#000000");
-addTag("adjoly", "Forked from", "#D950FF");
-addTag("randria", "Impostor", "#FF6950");
-addTag("grandria", "Impostor", "#FF6950");
+
+async function applyBadges() {
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/badges.json";
+  	const request = new Request(requestURL);
+
+	const response = await fetch(request);
+	const badges = await response.json();
+
+	for (badge in badges)
+	{
+		addTag(badges[badge].user, badges[badge].tag, badges[badge].color);
+	}
+}
+
+applyBadges();

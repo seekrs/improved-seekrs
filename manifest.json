@@ -15,7 +15,7 @@
 		}
 	},
 
-    "permissions": ["webRequest", "webRequestBlocking", "https://*.intra.42.fr/*"],
+    "permissions": ["webRequest", "webRequestBlocking", "https://*.intra.42.fr/*", "https://raw.githubusercontent.com/*"],
 
     "content_scripts": [
         {
