@@ -14,11 +14,10 @@
 
 [<img src="https://lh4.ggpht.com/x-plP9YZXhCaiDkTKQ5S29PwLmdi4feEKrMOtQle4NuoOaUgKUMH9pPWIg91da3anhSmw-G8erEIuU0d" width="128" alt="Google Chrome" title="Download for Google Chrome">](https://github.com/seekrs/improved-seekrs/releases/latest/download/chrome.crx)
 
-In Chrome extensions :
+For Chrome extension :
 
-- Activate Developper mode
-- Load Unpacked
-- Select the folder with the extension in it
+- wget the github releases link
+- and drag and drop it in the extension tab
 
 ## Features
 
