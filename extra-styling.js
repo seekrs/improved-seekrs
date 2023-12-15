@@ -50,8 +50,6 @@ function addTag(user, tag, color)
 			document.getElementsByClassName("name")[0].insertAdjacentHTML("beforebegin", "<span class='user-badge' style='background-color: " + color + "; border-color:" + color + "'>" + tag + "</span>\n &nbsp \n");
 }
 
-addTag("kiroussa", "kroussar", "#000000");
-
 async function applyBadges() {
 	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/badges.json";
   	const request = new Request(requestURL);

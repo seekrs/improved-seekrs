@@ -11,6 +11,12 @@
 			"version": "0.4",
 			"update_link": "https://github.com/seekrs/improved-seekrs/releases/download/0.4/firefox.xpi",
 			"update_info_url": "https://github.com/seekrs/improved-seekrs/releases/tag/0.4"
+		},
+		{
+			"version": "0.5",
+			"update_link": "https://github.com/seekrs/improved-seekrs/releases/download/0.5/firefox.xpi",
+			"update_info_url": "https://github.com/seekrs/improved-seekrs/releases/tag/0.5"
+
 		}
       ]
     }
