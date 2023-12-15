@@ -11,7 +11,7 @@
 
     "browser_specific_settings": {
 		"gecko": {
-			"update_url": "https://raw.githubusercontent.com/KeyZox/improved-seekrs/main/updates.json"
+			"update_url": "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/updates.json"
 		}
 	},
 

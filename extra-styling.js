@@ -46,3 +46,5 @@ function addTag(user, tag, color)
 
 addTag("kiroussa", "kroussar", "#000000");
 addTag("adjoly", "Forked from", "#D950FF");
+addTag("randria", "Impostor", "#FF6950");
+addTag("grandria", "Impostor", "#FF6950");

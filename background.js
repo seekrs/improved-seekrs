@@ -3,7 +3,7 @@ const seekerstargetUrl = "https://raw.githubusercontent.com/seekrs/art/main/wall
 
 
 let mmoussouPattern = "https://cdn.intra.42.fr/users/*/*mmoussou*";
-const mmoussoutargetUrl = "https://i.redd.it/a2nga4jvjy291.png";
+const mmoussoutargetUrl = "https://avatars.githubusercontent.com/u/95646468?v=4";
 
 let lbouetPattern = "https://cdn.intra.42.fr/users/*/*lbouet*";
 const lbouetTargetUrl = "https://media1.tenor.com/m/n49_tZAbdocAAAAC/lain-iwakura-sel.gif";
