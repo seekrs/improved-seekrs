@@ -35,3 +35,14 @@ function seekersUpdate()
 }
 
 seekersUpdate();
+
+function addTag(user, tag, color)
+{
+	pageUser = document.getElementsByClassName("login");
+	if (pageUser)
+		if (pageUser[0].textContent == user)
+			document.getElementsByClassName("name")[0].insertAdjacentHTML("beforebegin", "<span class='user-badge' style='background-color: " + color + "; border-color:" + color + "'>" + tag + "</span>\n &nbsp \n");
+}
+
+addTag("kiroussa", "kroussar", "#000000");
+addTag("adjoly", "Forked from", "#D950FF");

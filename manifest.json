@@ -19,12 +19,11 @@
 
     "content_scripts": [
         {
-            "matches": ["https://profile.intra.42.fr/*"],
-			"exclude_matches": ["https://profile.intra.42.fr/blocs/64/coalitions"],
+            "matches": ["https://profile.intra.42.fr/", "https://profile.intra.42.fr/users/*"],
             "js": ["styling.js"]
         },
 		{
-			"matches": ["https://profile.intra.42.fr/blocs/64/coalitions"],
+			"matches": ["https://profile.intra.42.fr/*"],
 			"js": ["extra-styling.js"]
 		}
     ],
