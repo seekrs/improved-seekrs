@@ -3,13 +3,10 @@ const seekerstargetUrl = "https://raw.githubusercontent.com/seekrs/art/main/wall
 
 
 let mmoussouPattern = "https://cdn.intra.42.fr/users/*/*mmoussou*";
-const mmoussoutargetUrl = "https://avatars.githubusercontent.com/u/95646468?v=4";
+const mmoussoutargetUrl = "https://media1.tenor.com/m/LcRQGhKX1AQAAAAd/ma-r%C3%A9action-sinc%C3%A8re-my-honest-reaction.gif";
 
 let lbouetPattern = "https://cdn.intra.42.fr/users/*/*lbouet*";
 const lbouetTargetUrl = "https://media1.tenor.com/m/n49_tZAbdocAAAAC/lain-iwakura-sel.gif";
-
-//let kiroussaPattern = "https://cdn.intra.42.fr/users/*/*kiroussa*";
-//const kroussarTargetUrl = "https://cdn.intra.42.fr/users/5b1f24ed85722759e9a759c3022ad02b/kroussar.jpg";
 
 function seekersRedirect(requestDetails) {
   if (requestDetails.url === seekerstargetUrl) {
@@ -38,15 +35,6 @@ function lbouetRedirect(requestDetails) {
   };
 }
 
-/*function kroussarRedirect(requestDetails) {
-  if (requestDetails.url === kroussarTargetUrl) {
-    return;
-  }
-  return {
-    redirectUrl: kroussarTargetUrl,
-  };
-}*/
-
 // ---------------------------------------------------
 
 browser.webRequest.onBeforeRequest.addListener(
@@ -66,9 +54,3 @@ browser.webRequest.onBeforeRequest.addListener(
   { urls: [lbouetPattern], types: ["image"] },
   ["blocking"],
 );
-
-/*browser.webRequest.onBeforeRequest.addListener(
-  kroussarRedirect,
-  { urls: [kiroussaPattern], types: ["image"] },
-  ["blocking"],
-);*/
