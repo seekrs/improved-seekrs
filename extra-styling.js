@@ -66,3 +66,27 @@ async function applyBadges() {
 }
 
 applyBadges();
+
+function addTitle(user, prefix, suffix)
+{
+	pageUser = document.getElementsByClassName("login");
+	if (pageUser)
+		if (pageUser[0].textContent == user)
+			pageUser[0].textContent = prefix + " " + user + " " + suffix;
+}
+
+
+async function applyTitles() {
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/titles.json";
+  	const request = new Request(requestURL);
+
+	const response = await fetch(request);
+	const titles = await response.json();
+
+	for (title in titles)
+	{
+		addTitle(titles[title].user, titles[title].prefix, titles[title].suffix);
+	}
+}
+
+applyTitles();
