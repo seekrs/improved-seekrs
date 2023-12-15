@@ -23,7 +23,7 @@
             "js": ["styling.js"]
         },
 		{
-			"matches": ["https://profile.intra.42.fr/*"],
+			"matches": ["https://*.intra.42.fr/*"],
 			"js": ["extra-styling.js"]
 		}
     ],

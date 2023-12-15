@@ -12,6 +12,12 @@
 
 var all = document.getElementsByTagName("*");
 
+var css = ":root { \n	--theme-color: #D950FF;\n	--theme-color-dark: #9d36ad;\n --theme-color-light: #e99cff;\n --logtime-chart-24h-color: #e99cff;\n}";
+
+var styleSheet = document.createElement("style");
+styleSheet.innerText = css;
+document.head.appendChild(styleSheet);
+
 function seekersUpdate()
 {
     var all = document.getElementsByTagName("*");
