@@ -51,7 +51,7 @@ function addTag(user, tag, color)
 }
 
 async function applyBadges() {
-	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/badges.json";
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/badges.json";
   	const request = new Request(requestURL);
 
 	const response = await fetch(request);
@@ -75,7 +75,7 @@ function addTitle(user, prefix, suffix)
 
 
 async function applyTitles() {
-	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/titles.json";
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/titles.json";
   	const request = new Request(requestURL);
 
 	const response = await fetch(request);

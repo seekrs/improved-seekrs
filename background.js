@@ -1,28 +1,31 @@
-let seekersPatern = "https://cdn.intra.42.fr/coalition/cover/219/login-screen.jpg";
-const seekerstargetUrl = "https://raw.githubusercontent.com/seekrs/art/main/wallpapers/seekrs-login.png";
+let seekersPattern = "https://cdn.intra.42.fr/coalition/cover/219/login-screen.jpg";
+const seekersTargetUrl = "https://raw.githubusercontent.com/seekrs/art/main/wallpapers/seekrs-login.png";
 
 
 let mmoussouPattern = "https://cdn.intra.42.fr/users/*/*mmoussou*";
-const mmoussoutargetUrl = "https://media1.tenor.com/m/LcRQGhKX1AQAAAAd/ma-r%C3%A9action-sinc%C3%A8re-my-honest-reaction.gif";
+const mmoussouTargetUrl = "https://media1.tenor.com/m/LcRQGhKX1AQAAAAd/ma-r%C3%A9action-sinc%C3%A8re-my-honest-reaction.gif";
 
 let lbouetPattern = "https://cdn.intra.42.fr/users/*/*lbouet*";
 const lbouetTargetUrl = "https://media1.tenor.com/m/n49_tZAbdocAAAAC/lain-iwakura-sel.gif";
 
+let kiroussaPattern = "https://cdn.intra.42.fr/users/*/*kiroussa*";
+const kiroussaTargetUrl = "https://media1.tenor.com/m/1G3k1aX57IUAAAAd/brain-damage.gif";
+
 function seekersRedirect(requestDetails) {
-  if (requestDetails.url === seekerstargetUrl) {
+  if (requestDetails.url === seekersTargetUrl) {
     return;
   }
   return {
-    redirectUrl: seekerstargetUrl,
+    redirectUrl: seekersTargetUrl,
   };
 }
 
 function mmoussouRedirect(requestDetails) {
-  if (requestDetails.url === mmoussoutargetUrl) {
+  if (requestDetails.url === mmoussouTargetUrl) {
     return;
   }
   return {
-    redirectUrl: mmoussoutargetUrl,
+    redirectUrl: mmoussouTargetUrl,
   };
 }
 
@@ -39,7 +42,7 @@ function lbouetRedirect(requestDetails) {
 
 browser.webRequest.onBeforeRequest.addListener(
   seekersRedirect,
-  { urls: [seekersPatern], types: ["image"] },
+  { urls: [seekersPattern], types: ["image"] },
   ["blocking"],
 );
 
@@ -52,5 +55,11 @@ browser.webRequest.onBeforeRequest.addListener(
 browser.webRequest.onBeforeRequest.addListener(
   lbouetRedirect,
   { urls: [lbouetPattern], types: ["image"] },
+  ["blocking"],
+);
+
+browser.webRequest.onBeforeRequest.addListener(
+  kiroussaRedirect,
+  { urls: [kiroussaPattern], types: ["image"] },
   ["blocking"],
 );
