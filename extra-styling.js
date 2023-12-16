@@ -86,7 +86,7 @@ function addTitle(user, prefix, suffix, format)
 
 
 async function applyTitles() {
-	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/feature/json-backgrounds/data/titles.json";
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/titles.json";
   	const request = new Request(requestURL);
 
 	const response = await fetch(request);

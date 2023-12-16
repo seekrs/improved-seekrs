@@ -9,7 +9,7 @@
 	},
 	{
 		"user": "kiroussa",
-		"suffix": "@minishell",
+		"suffix": "@minishell ~ $",
 		"format": "%user%%suffix%"
 	}
 ]

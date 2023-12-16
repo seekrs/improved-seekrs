@@ -50,7 +50,7 @@ class Override {
 }
 
 async function applyWebFilters() {
-  const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/feature/json-backgrounds/data/requests-overrides.json";
+  const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/requests-overrides.json";
   const request = new Request(requestURL);
 
   const response = await fetch(request);
