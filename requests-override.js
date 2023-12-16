@@ -2,6 +2,7 @@ class OverrideTarget {
   constructor(targetData) {
     this.type = targetData.type;
     this.value = targetData.value;
+    this.grabTypes = targetData.grabTypes;
   }
 
   get url() {
@@ -19,6 +20,9 @@ class OverrideTarget {
       if (this.url.endsWith(".jpg") || this.url.endsWith(".png") || this.url.endsWith(".jpeg") || this.url.endsWith(".gif") || this.url.endsWith(".webp")) {
         return ["image"];
       }
+    }
+    if (this.grabTypes !== null && this.grabTypes !== undefined) {
+      return this.grabTypes;
     }
     return null;
   }
