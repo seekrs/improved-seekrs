@@ -20,10 +20,13 @@ class OverrideTarget {
         return ["image"];
       }
     }
-    return [];
+    return null;
   }
 
   get filter() {
+    if (this.types === null) {
+      return { urls: [this.url] };
+    }
     return { urls: [this.url], types: this.types };
   }
 }
@@ -35,6 +38,7 @@ class Override {
   }
 
   apply() {
+    console.log("> Filter: " + this.target.filter);
     browser.webRequest.onBeforeRequest.addListener(
       (req) => {
         if (req.url === this.replaceBy) return {};
