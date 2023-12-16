@@ -12,35 +12,66 @@
 
 var all = document.getElementsByTagName("*");
 
-var css = ":root { \n	--theme-color: #D950FF;\n	--theme-color-dark: #9d36ad;\n --theme-color-light: #e99cff;\n --logtime-chart-24h-color: #e99cff;\n}";
-
-var styleSheet = document.createElement("style");
-styleSheet.innerText = css;
-document.head.appendChild(styleSheet);
-
-function seekersUpdate()
+async function getStorage()
 {
-    var all = document.getElementsByTagName("*");
-    for (var i=0, max=all.length; i < max; i++) {
-        if (all[i].style)
-        {
-            if (all[i].style.color == 'rgb(255, 105, 80)')
-            {
-                all[i].style.color = '#D950FF';
-            }
-            if (all[i].style.backgroundColor == 'rgb(255, 105, 80)')
-            {
-                all[i].style.backgroundColor = '#D950FF';
-            }
-            if (all[i].style.fill == 'rgb(255, 105, 80)')
-            {
-                all[i].style.fill = '#D950FF';
-            }
-        }
-    }
+	let storageValues = await browser.storage.local.get('colorStatus');
+	console.log(storageValues.colorStatus);
+	return(storageValues.colorStatus);
+}
+
+async function seekersUpdate()
+{
+	let isEnable = await getStorage();
+	if (isEnable === undefined)
+	{
+		browser.storage.local.set({colorStatus: true});
+		isEnable = getStorage();
+	}
+	if(isEnable)
+	{
+		var css = ":root { \n	--theme-color: #D950FF;\n	--theme-color-dark: #9d36ad;\n --theme-color-light: #e99cff;\n --logtime-chart-24h-color: #e99cff;\n}";
+
+		var styleSheet = document.createElement("style");
+		styleSheet.innerText = css;
+		document.head.appendChild(styleSheet);
+		var all = document.getElementsByTagName("*");
+		for (var i=0, max=all.length; i < max; i++) {
+			if (all[i].style)
+			{
+				if (all[i].style.color == 'rgb(255, 105, 80)')
+				{
+					all[i].style.color = '#D950FF';
+				}
+				if (all[i].style.backgroundColor == 'rgb(255, 105, 80)')
+				{
+					all[i].style.backgroundColor = '#D950FF';
+				}
+				if (all[i].style.fill == 'rgb(255, 105, 80)')
+				{
+					all[i].style.fill = '#D950FF';
+				}
+			}
+		}
+	}
 }
 
 seekersUpdate();
+
+browser.storage.local.onChanged.addListener(seekersUpdate);
+
+async function reloading()
+{
+	let isEnable = await getStorage();
+	if (isEnable === undefined)
+	{
+		browser.storage.local.set({colorStatus: true});
+		isEnable = getStorage();
+	}
+	if(!isEnable)
+		location.reload();
+}
+
+browser.storage.local.onChanged.addListener(reloading);
 
 function addTag(user, tag, color)
 {

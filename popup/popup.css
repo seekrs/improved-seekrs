@@ -1,0 +1,48 @@
+body {
+    background-color: #1d2028;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-shadow: #D950FFaa 1px 0 10px;
+    color: whitesmoke;
+    text-decoration: none;
+    font: 700 26px 'Roboto', sans-serif;
+    align-items: center;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+}
+
+svg {
+    margin-bottom: 20px;
+}
+
+button {
+        color: whitesmoke;
+        text-decoration: none;
+        font: 700 18px 'Roboto', sans-serif;
+        transition: all .2s;
+        align-items: center;
+        padding: 10px 15px;
+        background: #2f3440;
+        box-shadow: 0 4px #575d6e, 0 5px 10px rgb(0 0 0 / 20%);
+        border-color: transparent;
+        border-radius: 7px;
+        margin-bottom: .7em;
+}
+
+button:hover {
+    transform: translate(0, 4px);
+    box-shadow: 0 0 rgba(0, 0, 0, 0.25), 0 0 0 rgba(0, 0, 0, .5), 0 -0px 5px rgba(0, 0, 0, .1);
+    color: grey;
+}
