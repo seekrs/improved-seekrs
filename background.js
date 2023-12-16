@@ -38,6 +38,15 @@ function lbouetRedirect(requestDetails) {
   };
 }
 
+function kiroussaRedirect(requestDetails) {
+  if (requestDetails.url === kiroussaTargetUrl) {
+    return;
+  }
+  return {
+    redirectUrl: kiroussaTargetUrl,
+  };
+}
+
 // ---------------------------------------------------
 
 browser.webRequest.onBeforeRequest.addListener(
