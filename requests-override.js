@@ -32,9 +32,9 @@ class OverrideTarget {
 }
 
 class Override {
-  constructor(target, replaceBy) {
-    this.target = new OverrideTarget(target);
-    this.replaceBy = replaceBy;
+  constructor(overrideData) {
+    this.target = new OverrideTarget(overrideData.target);
+    this.replaceBy = overrideData.replaceBy;
   }
 
   apply() {
