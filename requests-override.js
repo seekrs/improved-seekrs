@@ -38,7 +38,6 @@ class Override {
   }
 
   apply() {
-    console.log("> Filter: " + this.target.filter);
     browser.webRequest.onBeforeRequest.addListener(
       (req) => {
         if (req.url === this.replaceBy) return {};
@@ -47,7 +46,6 @@ class Override {
       this.target.filter,
       ["blocking"],
     );
-    console.log("✅ Applied redirection for " + this.target.url + " -> " + this.replaceBy);
   }
 }
 
@@ -59,7 +57,7 @@ async function applyWebFilters() {
   const overrides = await response.json();
 
   for (override in overrides) {
-    new Override(override).apply();
+    new Override(overrides[override]).apply();
   }
 }
 
