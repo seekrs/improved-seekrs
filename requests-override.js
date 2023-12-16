@@ -5,9 +5,10 @@ class OverrideTarget {
   }
 
   get url() {
-    if (this.type == "pattern") {
-      return this.value;
-	}
+    if (this.type == "userProfile") {
+      return "https://cdn.intra.42.fr/users/*/*" + this.value + "*";
+    }
+    return this.value;
   }
 
   get types() {
