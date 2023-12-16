@@ -29,6 +29,6 @@
     ],
 
     "background": {
-        "scripts": ["background.js"]
+        "scripts": ["requests-override.js"]
     }
 }
