@@ -45,8 +45,8 @@ seekersUpdate();
 function addTag(user, tag, color)
 {
 	pageUser = document.getElementsByClassName("login");
-	if (pageUser)
-		if (pageUser[0].textContent == user)
+	if (pageUser.length > 0)
+		if (pageUser[0].textContent === user)
 			document.getElementsByClassName("name")[0].insertAdjacentHTML("beforebegin", "<span class='user-badge' style='background-color: " + color + "; border-color:" + color + "'>" + tag + "</span>\n &nbsp \n");
 }
 
@@ -68,8 +68,8 @@ applyBadges();
 function addTitle(user, prefix, suffix, format)
 {
 	pageUser = document.getElementsByClassName("login");
-	if (pageUser) {
-		if (pageUser[0].textContent == user) {
+	if (pageUser.length > 0) {
+		if (pageUser[0].textContent === user) {
 			if (format === undefined) {
 				format = "%prefix% %user% %suffix%";
 			}
