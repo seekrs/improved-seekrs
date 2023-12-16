@@ -5,7 +5,9 @@ class OverrideTarget {
   }
 
   get url() {
-    return this.url;
+    if (this.type == "pattern") {
+      return this.value;
+	}
   }
 
   get types() {
@@ -45,15 +47,15 @@ class Override {
 }
 
 async function applyWebFilters() {
-	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/feature/json-backgrounds/data/requests-overrides.json";
+  const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/feature/json-backgrounds/data/requests-overrides.json";
   const request = new Request(requestURL);
 
-	const response = await fetch(request);
-	const overrides = await response.json();
+  const response = await fetch(request);
+  const overrides = await response.json();
 
-	for (override in overrides) {
-		Override(override).apply();
-	}
+  for (override in overrides) {
+    new Override(override).apply();
+  }
 }
 
 applyWebFilters();
