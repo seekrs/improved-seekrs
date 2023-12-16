@@ -1,17 +1,15 @@
 [
 	{
 		"user": "lvincent",
-		"prefix": "Toilet Destroyer",
-		"suffix": ""
+		"prefix": "Toilet Destroyer"
 	},
 	{
 		"user": "cblonde",
-		"prefix": "Outstanding",
-		"suffix": ""
+		"prefix": "Outstanding"
 	},
 	{
 		"user": "kiroussa",
-		"prefix": "megamind",
-		"suffix": "🧠"
+		"suffix": "@minishell",
+		"format": "%user%%suffix%"
 	}
 ]

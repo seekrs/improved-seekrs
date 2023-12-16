@@ -57,33 +57,44 @@ async function applyBadges() {
 	const response = await fetch(request);
 	const badges = await response.json();
 
-	for (badge in badges)
-	{
-		addTag(badges[badge].user, badges[badge].tag, badges[badge].color);
+	for (id in badges) {
+		badge = badges[id];
+		addTag(badge.user, badge.tag, badge.color);
 	}
 }
 
 applyBadges();
 
-function addTitle(user, prefix, suffix)
+function addTitle(user, prefix, suffix, format)
 {
 	pageUser = document.getElementsByClassName("login");
-	if (pageUser)
-		if (pageUser[0].textContent == user)
-			pageUser[0].textContent = prefix + " " + user + " " + suffix;
+	if (pageUser) {
+		if (pageUser[0].textContent == user) {
+			if (format === undefined) {
+				format = "%prefix% %user% %suffix%";
+			}
+			if (prefix === undefined) {
+				prefix = "";
+			}
+			if (suffix === undefined) {
+				suffix = "";
+			}
+			pageUser[0].textContent = format.replace("%prefix%", prefix).replace("%user%", user).replace("%suffix%", suffix);
+		}	
+	}
 }
 
 
 async function applyTitles() {
-	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/titles.json";
+	const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/feature/json-backgrounds/data/titles.json";
   	const request = new Request(requestURL);
 
 	const response = await fetch(request);
 	const titles = await response.json();
 
-	for (title in titles)
-	{
-		addTitle(titles[title].user, titles[title].prefix, titles[title].suffix);
+	for (id in titles) {
+		title = titles[id];
+		addTitle(title.user, title.prefix, title.suffix, title.format);
 	}
 }
 
