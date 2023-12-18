@@ -38,5 +38,15 @@
 		"user": "babonnet",
 		"tag": "Seekers",
 		"color": "#FF6950"
+	},
+	{
+		"user": "edouay",
+		"tag": "Ambassadeur",
+		"color": "#90F0F5"
+	},
+	{
+		"user": "dnegre",
+		"tag": "Unblackholable",
+		"color": "#000000"
 	}
 ]

@@ -10,13 +10,20 @@
 		"suffix": ""
 	},
 	{
-		"prefix": "[WANTED]",
+		"prefix": "",
 		"user": "kiroussa",
-		"suffix": ""
+		"suffix": "@minishell ~ $",
+		"format": "%user%%suffix%"
 	},
 	{
 		"user": "cglandus",
 		"prefix": "",
-		"suffix": "the Reincarnated"
+		"suffix": ", the Resurrected",
+		"format": "%user%%suffix%"
+	},
+	{
+		"user": "stales",
+		"prefix": "big brain",
+		"suffix": ""
 	}
 ]
