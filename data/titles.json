@@ -1,15 +1,22 @@
 [
 	{
 		"user": "lvincent",
-		"prefix": "Toilet Destroyer"
+		"prefix": "Toilet Destroyer",
+		"suffix": ""
 	},
 	{
 		"user": "cblonde",
-		"prefix": "Outstanding"
+		"prefix": "Outstanding",
+		"suffix": ""
 	},
 	{
+		"prefix": "[WANTED]",
 		"user": "kiroussa",
-		"suffix": "@minishell ~ $",
-		"format": "%user%%suffix%"
+		"suffix": ""
+	},
+	{
+		"user": "cglandus",
+		"prefix": "",
+		"suffix": "the Reincarnated"
 	}
 ]
