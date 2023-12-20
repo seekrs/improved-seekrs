@@ -69,15 +69,10 @@ applyBadges();
 
 function addTitle(user, prefix, suffix, format)
 {
-	if (format === undefined) {
-		format = "%prefix% %user% %suffix%";
-	}
-	if (prefix === undefined) {
-		prefix = "";
-	}
-	if (suffix === undefined) {
-		suffix = "";
-	}
+	if (format === undefined) format = "%prefix% %user% %suffix%";
+	if (prefix === undefined) prefix = "";
+	if (suffix === undefined) suffix = "";
+	
 	let titledName = format.replace("%prefix%", prefix).replace("%user%", user).replace("%suffix%", suffix);
 	pageUser = document.getElementsByClassName("login");
 	if (pageUser.length > 0) {
