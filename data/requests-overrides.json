@@ -34,4 +34,11 @@
         },
         "replaceBy": "https://media1.tenor.com/m/ZuXnTDxIbjQAAAAC/shocked-shocked-cat.gif"
     }
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "maldavid"
+        },
+        "replaceBy": "https://media1.tenor.com/m/WZYTyU4YVRAAAAAC/baldur%27s-gate-baldur%27s-gate-3.gif"
+    }
 ]
