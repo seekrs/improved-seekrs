@@ -26,5 +26,12 @@
             "value": "kiroussa"
         },
         "replaceBy": "https://media1.tenor.com/m/1G3k1aX57IUAAAAd/brain-damage.gif"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "vvaas"
+        },
+        "replaceBy": "https://media1.tenor.com/m/ZuXnTDxIbjQAAAAC/shocked-shocked-cat.gif"
     }
 ]
