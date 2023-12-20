@@ -45,9 +45,11 @@ seekersUpdate();
 function addTag(user, tag, color)
 {
 	pageUser = document.getElementsByClassName("login");
-	if (pageUser.length > 0)
-		if (pageUser[0].textContent === user)
+	if (pageUser.length > 0) {
+		if (pageUser[0].textContent === user) {
 			document.getElementsByClassName("name")[0].insertAdjacentHTML("beforebegin", "<span class='user-badge' style='background-color: " + color + "; border-color:" + color + "'>" + tag + "</span>\n &nbsp \n");
+		}
+	}
 }
 
 async function applyBadges() {
@@ -67,21 +69,22 @@ applyBadges();
 
 function addTitle(user, prefix, suffix, format)
 {
+	if (format === undefined) format = "%prefix% %user% %suffix%";
+	if (prefix === undefined) prefix = "";
+	if (suffix === undefined) suffix = "";
+	
+	let titledName = format.replace("%prefix%", prefix).replace("%user%", user).replace("%suffix%", suffix);
 	pageUser = document.getElementsByClassName("login");
 	if (pageUser.length > 0) {
 		if (pageUser[0].textContent === user) {
-			if (format === undefined) {
-				format = "%prefix% %user% %suffix%";
-			}
-			if (prefix === undefined) {
-				prefix = "";
-			}
-			if (suffix === undefined) {
-				suffix = "";
-			}
-			pageUser[0].textContent = format.replace("%prefix%", prefix).replace("%user%", user).replace("%suffix%", suffix);
+			pageUser[0].textContent = titledName;
 		}	
 	}
+	document.querySelectorAll("#collapseEvaluations .reminder .project-item-text a").forEach((aTag) => {
+		if (aTag.textContent === user) {
+			aTag.textContent = titledName;
+		}
+	});
 }
 
 
