@@ -46,7 +46,7 @@ function addTag(user, tag, color)
 {
 	pageUser = document.getElementsByClassName("login");
 	if (pageUser.length > 0) {
-		if (pageUser[0].textContent === user) {
+		if (pageUser[0].dataset.login === user) {
 			document.getElementsByClassName("name")[0].insertAdjacentHTML("beforebegin", "<span class='user-badge' style='background-color: " + color + "; border-color:" + color + "'>" + tag + "</span>\n &nbsp \n");
 		}
 	}
@@ -81,7 +81,7 @@ function addTitle(user, prefix, suffix, format)
 		}	
 	}
 	document.querySelectorAll("#collapseEvaluations .reminder .project-item-text a").forEach((aTag) => {
-		if (aTag.textContent === user) {
+		if (aTag.dataset.userLink === user) {
 			aTag.textContent = titledName;
 		}
 	});
