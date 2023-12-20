@@ -30,5 +30,10 @@
 		"user": "stales",
 		"prefix": "big brain",
 		"suffix": ""
+	},
+	{
+		"user": "maldavid",
+		"suffix": "mauvaisdavid",
+		"format": "%suffix%"
 	}
 ]

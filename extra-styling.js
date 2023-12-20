@@ -76,7 +76,7 @@ function addTitle(user, prefix, suffix, format)
 	let titledName = format.replace("%prefix%", prefix).replace("%user%", user).replace("%suffix%", suffix);
 	pageUser = document.getElementsByClassName("login");
 	if (pageUser.length > 0) {
-		if (pageUser[0].textContent === user) {
+		if (pageUser[0].dataset.login === user) {
 			pageUser[0].textContent = titledName;
 		}	
 	}
