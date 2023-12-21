@@ -33,7 +33,7 @@
 	},
 	{
 		"user": "maldavid",
-		"suffix": "MLX man",
-		"format": "%suffix%"
+		"prefix": "mauvais",
+		"suffix": ""
 	}
 ]
