@@ -43,6 +43,11 @@
 		"user": "maldavid",
 		"tag": "MLX",
 		"color": "#ba2020"
+	},
+	{
+		"user": "gmassoni",
+		"tag": "chmod 000",
+		"color": "#d950ff"
 	}
 ]
 
