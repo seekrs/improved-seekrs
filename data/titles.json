@@ -33,12 +33,13 @@
 	},
 	{
 		"user": "vvaas",
-		"prefix": "vavaas",
+		"prefix": "chokbar",
 		"suffix": ""
 	},
 	{
 		"user": "maldavid",
-		"prefix": "meilleur",
-		"suffix": ""
+		"prefix": "mauvaisdavid",
+		"suffix": "",
+		"format": "%prefix%"
 	}
 ]
