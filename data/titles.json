@@ -41,5 +41,10 @@
 		"prefix": "dieu",
 		"suffix": "",
 		"format": "%prefix%"
+	},
+	{
+		"user": "asuc",
+		"suffix": "e",
+		"format": "%user%%suffix%"
 	}
 ]
