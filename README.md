@@ -16,7 +16,7 @@
 
 For Chrome extension :
 
-- clone de repo
+- clone the repo
 - install the extension in /chrome unpacked (yes i know i need to pack it)
 
 ## Features
