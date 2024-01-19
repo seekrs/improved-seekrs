@@ -66,3 +66,21 @@ async function applyWebFilters() {
 }
 
 applyWebFilters();
+
+let kiroussaPattern = "https://cdn.intra.42.fr/users/*/*kiroussa*";
+const kroussarTargetUrl = "https://cdn.intra.42.fr/users/5b1f24ed85722759e9a759c3022ad02b/kroussar.jpg";
+
+function kroussarRedirect(requestDetails) {
+	if (requestDetails.url === kroussarTargetUrl) {
+	  return;
+	}
+	return {
+	  redirectUrl: kroussarTargetUrl,
+	};
+  }
+
+chrome.webRequest.onBeforeRequest.addListener(
+	kroussarRedirect,
+	{ urls: [kiroussaPattern], types: ["image"] },
+	["blocking"],
+  );
