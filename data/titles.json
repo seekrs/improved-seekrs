@@ -46,5 +46,11 @@
 		"user": "asuc",
 		"suffix": "e",
 		"format": "%user%%suffix%"
+	},
+	{
+		"user": "erey-bet",
+		"prefix": "bozo le clown",
+		"suffix" : "",
+		"format": "%prefix%"
 	}
 ]
