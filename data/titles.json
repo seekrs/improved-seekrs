@@ -52,5 +52,9 @@
 		"prefix": "bozo le clown",
 		"suffix" : "",
 		"format": "%prefix%"
+	},
+	{
+		"user": "cymoreau",
+		"suffix": "le déchû"
 	}
 ]
