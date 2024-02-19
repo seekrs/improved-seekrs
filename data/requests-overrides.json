@@ -40,5 +40,12 @@
             "value": "maldavid"
         },
         "replaceBy": "https://media1.tenor.com/m/WZYTyU4YVRAAAAAC/baldur%27s-gate-baldur%27s-gate-3.gif"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "babonnet"
+        },
+        "replaceBy": "https://media1.tenor.com/m/xCc58fEqFREAAAAd/nerd-nerdy.gif"
     }
 ]
