@@ -22,9 +22,8 @@
 	},
 	{
 		"user": "cglandus",
-		"prefix": "",
-		"suffix": ", the Resurrected",
-		"format": "%user%%suffix%"
+		"prefix": "The Legend",
+		"format": "%prefix% %user%"
 	},
 	{
 		"user": "stales",
