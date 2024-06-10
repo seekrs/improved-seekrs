@@ -1,44 +1,35 @@
 [
 	{
 		"user": "lvincent",
-		"prefix": "Toilet Destroyer",
-		"suffix": ""
+		"prefix": "Toilet Destroyer"
 	},
 	{
 		"user": "adjoly",
-		"prefix": "Forked from",
-		"suffix": ""
+		"prefix": "Forked from"
 	},
 	{
 		"user": "cblonde",
-		"prefix": "Outstanding",
-		"suffix": ""
+		"prefix": "Outstanding"
 	},
 	{
-		"prefix": "",
-		"user": "kiroussa",
-		"suffix": "@minishell ~ $",
-		"format": "%user%%suffix%"
+		"prefix": "racist",
+		"user": "kiroussa"
 	},
 	{
 		"user": "cglandus",
-		"prefix": "The Legend",
-		"format": "%prefix% %user%"
+		"prefix": "The Legend"
 	},
 	{
 		"user": "stales",
-		"prefix": "big brain",
-		"suffix": ""
+		"prefix": "big brain"
 	},
 	{
 		"user": "vvaas",
-		"prefix": "chokbar",
-		"suffix": ""
+		"prefix": "chokbar"
 	},
 	{
 		"user": "maldavid",
 		"prefix": "dieu",
-		"suffix": "",
 		"format": "%prefix%"
 	},
 	{
@@ -49,7 +40,6 @@
 	{
 		"user": "erey-bet",
 		"prefix": "bozo le clown",
-		"suffix" : "",
 		"format": "%prefix%"
 	},
 	{
