@@ -1,3 +1,15 @@
+// ************************************************************************** //
+//                                                                            //
+//                                                        :::      ::::::::   //
+//   requests-override.js                               :+:      :+:    :+:   //
+//                                                    +:+ +:+         +:+     //
+//   By: kiroussa <oss@xtrm.me>                     +#+  +:+       +#+        //
+//                                                +#+#+#+#+#+   +#+           //
+//   Created: 2024/06/11 04:38:43 by kiroussa          #+#    #+#             //
+//   Updated: 2024/06/11 08:05:39 by kiroussa         ###   ########.fr       //
+//                                                                            //
+// ************************************************************************** //
+
 class OverrideTarget {
   constructor(targetData) {
     this.type = targetData.type;
@@ -54,7 +66,7 @@ class Override {
 }
 
 async function applyWebFilters() {
-  const requestURL = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/data/requests-overrides.json";
+  const requestURL = repoRawUrl + "/data/requests-overrides.json";
   const request = new Request(requestURL);
 
   const response = await fetch(request);

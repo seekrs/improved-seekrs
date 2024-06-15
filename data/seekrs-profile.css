@@ -1,0 +1,41 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   seekrs-profile.css                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kiroussa <oss@xtrm.me>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/06/11 07:41:56 by kiroussa          #+#    #+#             */
+/*   Updated: 2024/06/11 08:09:42 by kiroussa         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+:root {
+	--theme-color: #d950ff;
+	--theme-color-dark: #9d36ad;
+	--theme-color-light: #e99cff;
+	--logtime-chart-24h-color: #e99cff;
+}
+
+.coalition-flag--flag {
+	fill: var(--theme-color) !important;
+}
+.coalition-span {
+	color: var(--theme-color) !important;
+}
+
+#metrics li {
+	background-color: var(--theme-color) !important;
+}
+#metrics ol {
+	border-left: 1px solid rgb(217, 50, 255) !important;
+}
+
+.progress-bar {
+	background: var(--theme-color) !important;
+}
+
+div#coalition-top-body a,
+div#coalition-global-data a {
+	color: var(--theme-color) !important;
+}

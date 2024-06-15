@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,	
     "name": "improved-seekrs",
-    "version": "0.6.2",
+    "version": "0.7.0",
   
-    "description": "What if it was Purple ?",
+    "description": "But what if it was Purple..?",
   
     "icons": {
         "48": "assets/logo.png"
@@ -18,17 +18,13 @@
     "permissions": ["webRequest", "webRequestBlocking", "https://*.intra.42.fr/*", "https://raw.githubusercontent.com/*"],
 
     "content_scripts": [
-        {
-            "matches": ["https://profile.intra.42.fr/", "https://profile.intra.42.fr/users/*"],
-            "js": ["styling.js"]
-        },
 		{
 			"matches": ["https://*.intra.42.fr/*"],
-			"js": ["extra-styling.js"]
+			"js": ["shared.js", "update-colors.js", "update-badges.js", "update-titles.js"]
 		}
     ],
 
     "background": {
-        "scripts": ["requests-override.js"]
+        "scripts": ["shared.js", "requests-override.js"]
     }
 }
