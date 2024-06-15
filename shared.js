@@ -6,11 +6,12 @@
 //   By: kiroussa <oss@xtrm.me>                     +#+  +:+       +#+        //
 //                                                +#+#+#+#+#+   +#+           //
 //   Created: 2024/06/11 04:49:23 by kiroussa          #+#    #+#             //
-//   Updated: 2024/06/11 08:04:47 by kiroussa         ###   ########.fr       //
+//   Updated: 2024/06/15 11:42:24 by kiroussa         ###   ########.fr       //
 //                                                                            //
 // ************************************************************************** //
 
-const repoRawUrl = "https://raw.githubusercontent.com/seekrs/improved-seekrs/main";
+const repoRawUrl = "https://raw.githubusercontent.com/seekrs/improved-seekrs/rework";
+
 const seekrsCoalitionId = 219;
 
 function isSeekrsProfile() {
