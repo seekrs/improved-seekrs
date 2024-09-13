@@ -54,5 +54,12 @@
             "value": "rgramati"
         },
         "replaceBy": "https://media1.tenor.com/m/LPED8VlhOZIAAAAC/simpsons-monkey.gif"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "mrudloff"
+        },
+        "replaceBy": "https://media.tenor.com/SBJXRMtMTrEAAAAM/dance-the-monkey.gif"
     }
 ]
