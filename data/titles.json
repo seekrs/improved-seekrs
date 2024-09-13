@@ -12,8 +12,9 @@
 		"prefix": "Outstanding"
 	},
 	{
-		"prefix": "kroussar killer",
-		"user": "kiroussa"
+		"prefix": "ki",
+		"user": "kiroussa",
+		"format": "%prefix%%user%"
 	},
 	{
 		"user": "cglandus",
@@ -38,6 +39,11 @@
 		"format": "%user%%suffix%"
 	},
 	{
+		"user": "lperis",
+		"prefix": "lpenis",
+		"format": "%prefix%"
+	},
+	{
 		"user": "erey-bet",
 		"prefix": "bozo le clown",
 		"format": "%prefix%"
@@ -49,5 +55,10 @@
 	{
 		"user": "axcallet",
 		"suffix": "le clown"
+	},
+	{
+		"user": "mrudloff",
+		"suffix": ", Garen's soul",
+		"format": "%user%%suffix%"
 	}
 ]
