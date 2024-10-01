@@ -12,13 +12,21 @@
 		"prefix": "Outstanding"
 	},
 	{
-		"prefix": "ki",
-		"user": "kiroussa",
-		"format": "%prefix%%user%"
+		"user": "",
+		"prefix": ""
+	},
+	{
+		"_comment": "oui emma c'est ton idée c'est bien",
+		"prefix": "death's scythe",
+		"user": "kiroussa"
 	},
 	{
 		"user": "cglandus",
 		"prefix": "The Legend"
+	},
+	{
+		"user": "ebouchet",
+		"prefix": "drole de"
 	},
 	{
 		"user": "stales",
