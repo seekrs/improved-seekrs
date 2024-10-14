@@ -84,15 +84,20 @@
 		"tag": "Démineur",
 		"color": "#000000"
 	},
-{
-  "user": "birdman",
-  "tag": "Démineur",
-  "color": "#000000"
-},
-{
-  "user": "wneel",
-  "tag": "Le malicieux",
-  "color": "#c40606"
-}
+	{
+		"user": "birdman",
+		"tag": "Démineur",
+		"color": "#000000"
+	},
+	{
+		"user": "wneel",
+		"tag": "Le malicieux",
+		"color": "#c40606"
+	},
+	{
+		"user": "jubreton",
+		"tag": "l'odeur",
+		"color": "#60f2bc"
+	}
 ]
 
