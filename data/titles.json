@@ -72,5 +72,9 @@
 		"user": "mrudloff",
 		"suffix": ", Garen's soul",
 		"format": "%user%%suffix%"
-	}
+	},
+ {
+  "user": "glaguyon",
+  "prefix": "Pâtissier"
+ }
 ]
