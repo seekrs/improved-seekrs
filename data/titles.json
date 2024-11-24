@@ -4,6 +4,10 @@
 		"prefix": "Toilet Destroyer"
 	},
 	{
+		"user": "gpouzet",
+		"prefix": "react enjoyer"
+	},
+	{
 		"user": "adjoly",
 		"prefix": "Forked from"
 	},
@@ -12,8 +16,7 @@
 		"prefix": "Outstanding"
 	},
 	{
-		"_comment": "oui emma c'est ton idée c'est bien",
-		"prefix": "death's scythe",
+		"prefix": "any%",
 		"user": "kiroussa"
 	},
 	{
@@ -73,8 +76,12 @@
 		"suffix": ", Garen's soul",
 		"format": "%user%%suffix%"
 	},
- {
-  "user": "glaguyon",
-  "prefix": "Pâtissier"
- }
+	{
+		"user": "glaguyon",
+		"prefix": "Pâtissier"
+	},
+	{
+		"user": "thomarna",
+		"suffix": "le collègue"
+	}
 ]
