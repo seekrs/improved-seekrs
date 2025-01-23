@@ -16,7 +16,7 @@
 		"prefix": "Outstanding"
 	},
 	{
-		"prefix": "any%",
+		"prefix": "catgirl",
 		"user": "kiroussa"
 	},
 	{
@@ -52,11 +52,6 @@
 		"user": "asuc",
 		"suffix": "e",
 		"format": "%user%%suffix%"
-	},
-	{
-		"user": "lperis",
-		"prefix": "lpenis",
-		"format": "%prefix%"
 	},
 	{
 		"user": "erey-bet",
