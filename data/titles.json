@@ -86,6 +86,6 @@
 	},
 	{
 		"user": "babonnet",
-		"prefix": "gcc -g3 -o glibc.debug.so"
+		"prefix": "clang -ffreestanding -nostdlib"
 	}
 ]
