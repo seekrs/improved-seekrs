@@ -61,5 +61,12 @@
             "value": "mrudloff"
         },
         "replaceBy": "https://media.tenor.com/SBJXRMtMTrEAAAAM/dance-the-monkey.gif"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "jubreton"
+        },
+        "replaceBy": "https://i.imgur.com/uBUzR20.jpeg"
     }
 ]
