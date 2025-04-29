@@ -68,5 +68,12 @@
             "value": "jubreton"
         },
         "replaceBy": "https://i.imgur.com/uBUzR20.jpeg"
+    },
+    {
+        "target": {
+            "type": "userProfile,
+            "value": "adjoly"
+        },
+        "replaceBy": "https://send.kanel.ovh/hotlink/rNGF5uXQkfcgwXVcMp1t0NgKMd2UXRIYqKNvfcJV.png"
     }
 ]
