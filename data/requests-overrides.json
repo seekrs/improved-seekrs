@@ -75,5 +75,12 @@
             "value": "adjoly"
         },
         "replaceBy": "https://send.kanel.ovh/hotlink/xA0pJbJY6vuwjvGjpXHde6Y7WSVs7VF0qWp8y9YS.png"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "marudloff"
+        },
+        "replaceBy": "https://media1.tenor.com/m/76b5b6fg1n4AAAAC/42-bangerz.gif"
     }
 ]
