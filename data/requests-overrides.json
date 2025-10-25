@@ -74,7 +74,7 @@
             "type": "userProfile",
             "value": "adjoly"
         },
-        "replaceBy": "https://send.kanel.ovh/hotlink/xA0pJbJY6vuwjvGjpXHde6Y7WSVs7VF0qWp8y9YS.png"
+        "replaceBy": "https://api.kanel.ovh/pp"
     },
     {
         "target": {
