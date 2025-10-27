@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,	
     "name": "improved-seekrs",
-    "version": "0.6.2",
+    "version": "0.6.3",
   
     "description": "What if it was Purple ?",
   
@@ -9,7 +9,7 @@
         "48": "assets/logo.png"
     },
 
-    "browser_specific_settings": {
+    "application": {
 		"gecko": {
 			"update_url": "https://raw.githubusercontent.com/seekrs/improved-seekrs/main/updates.json"
 		}

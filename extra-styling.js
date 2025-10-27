@@ -101,4 +101,17 @@ async function applyTitles() {
 	}
 }
 
+async function applyGrade() {
+	const userGrade = document.getElementsByClassName("user-grade-value");
+
+	for (let i = 0; i < userGrade.length; i++) {
+		if (userGrade[i].innerText === "Transcender") {
+			console.log("is trans :D")
+			userGrade[i].innerText = "Transgender"
+		}
+	}
+}
+
+applyGrade();
+
 applyTitles();
