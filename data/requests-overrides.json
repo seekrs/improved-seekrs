@@ -82,5 +82,12 @@
             "value": "marudlof"
         },
         "replaceBy": "https://media1.tenor.com/m/76b5b6fg1n4AAAAC/42-bangerz.gif"
+    },
+    {
+        "target": {
+            "type": "userProfile",
+            "value": "dakaymak"
+        },
+        "replaceBy": "https://media1.tenor.com/m/-P-xeHYEY9QAAAAd/sad-pablo-lonely.gif"
     }
 ]
