@@ -89,5 +89,12 @@
             "value": "dakaymak"
         },
         "replaceBy": "https://media1.tenor.com/m/-P-xeHYEY9QAAAAd/sad-pablo-lonely.gif"
+    },
+    {
+         "target": {
+            "type": "userProfile",
+            "value": "yupoulet"
+        },
+        "replaceBy": "https://media1.tenor.com/m/A2W9Vpy2_WkAAAAd/chainsmoker-cat.gif"
     }
 ]
